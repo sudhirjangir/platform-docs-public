@@ -10,9 +10,7 @@ config:
   target: "{{ $processEnvironment.API_HOST }}"
   phases:
     - duration: 60
-      arrivalRate: 20
-  plugins:
-    expect: {}
+      arrivalRate: 5
   payload:
     path: "completions_post_success.csv"
     fields:
@@ -24,15 +22,17 @@ config:
       - "stream"
       - "safe_prompt"
       - "random_seed"
-    skipHeader: true
+  plugins:
+    expect: {}
+
 scenarios:
-  - name: "Chat Completions API Test"
+  - name: "POST /chat/completions"
     flow:
       - post:
           url: "/chat/completions"
           headers:
             content-type: "application/json"
-            authorization: "Bearer {{$processEnvironment.AUTH_TOKEN}}"
+            Authorization: "Bearer {{ $processEnvironment.AUTH_TOKEN }}"
           json:
             model: "{{ model }}"
             messages: "{{ messages }}"
@@ -50,4 +50,6 @@ scenarios:
             - hasProperty: "model"
             - hasProperty: "choices"
             - hasProperty: "usage"
-          think: 1
+            - hasHeader: "content-type"
+            - headerEquals: ["content-type", "application/json"]
+        think: 1

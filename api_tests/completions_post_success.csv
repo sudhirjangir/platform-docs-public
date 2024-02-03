@@ -1,11 +1,11 @@
 model,messages,temperature,top_p,max_tokens,stream,safe_prompt,random_seed
-mistral-tiny,[{"role":"user","content":"What is the best French cheese?"}],0.7,1,16,false,false,1234
-mistral-tiny,[{"role":"user","content":"How to cook pasta?"}],0.6,0.9,20,true,true,5678
-mistral-tiny,[{"role":"system","content":"Tell me a joke"}],0.8,0.7,10,false,true,9101
-mistral-tiny,[{"role":"assistant","content":"What's the weather?"}],0.5,0.8,15,true,false,1213
-mistral-tiny,[{"role":"user","content":"Recommend a book"}],0.4,0.6,18,false,true,1415
-mistral-tiny,[{"role":"system","content":"Play a song"}],0.7,0.5,12,true,true,1617
-mistral-tiny,[{"role":"assistant","content":"Set an alarm"}],0.6,0.4,14,false,false,1819
-mistral-tiny,[{"role":"user","content":"Order a pizza"}],0.5,0.3,16,true,true,2021
-mistral-tiny,[{"role":"system","content":"Start a timer"}],0.4,0.2,18,false,false,2223
-mistral-tiny,[{"role":"assistant","content":"Find a recipe"}],0.3,0.1,10,true,true,2425
+text-davinci-002,[{"role":"user","content":"What is the best French cheese?"}],0.8,0.1,20,true,false,12345
+gpt-3.5-turbo,[{"role":"system","content":"Translate this sentence to French."}],0.7,0.2,30,false,true,67890
+text-davinci-002,[{"role":"user","content":"What is the weather today?"}],0.6,0.3,15,true,false,11121
+gpt-3.5-turbo,[{"role":"system","content":"Find the nearest restaurant."}],0.5,0.4,25,false,true,22232
+text-davinci-002,[{"role":"user","content":"How to bake a cake?"}],0.4,0.5,20,true,false,33343
+gpt-3.5-turbo,[{"role":"system","content":"Play some music."}],0.3,0.6,30,false,true,44454
+text-davinci-002,[{"role":"user","content":"Tell me a joke."}],0.2,0.7,10,true,false,55565
+gpt-3.5-turbo,[{"role":"system","content":"What's the time?"}],0.1,0.8,15,false,true,66676
+text-davinci-002,[{"role":"user","content":"What's the news today?"}],0.9,0.9,25,true,false,77787
+gpt-3.5-turbo,[{"role":"system","content":"Call a cab."}],1.0,1.0,20,false,true,88898
