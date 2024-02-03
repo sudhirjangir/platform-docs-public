@@ -1,0 +1,11 @@
+model,messages,temperature,top_p,max_tokens,stream,safe_prompt,random_seed
+mistral-tiny,[{"role":"user","content":"How is the weather today?"}],0.7,1,16,true,false,12345
+mistral-tiny,[{"role":"user","content":"What day is it?"}],0.8,0.9,20,false,true,67890
+mistral-small,[{"role":"system","content":"Start the meeting"}],0.5,1,30,true,true,11121
+mistral-tiny,[{"role":"user","content":"Who won the game?"}],0.6,0.8,25,false,false,23232
+mistral-medium,[{"role":"assistant","content":"The meeting has been scheduled"}],0.4,0.7,35,true,true,45454
+mistral-tiny,[{"role":"user","content":"Play some music"}],0.9,1,40,false,true,67676
+mistral-large,[{"role":"system","content":"End the meeting"}],0.3,0.6,45,true,false,89898
+mistral-tiny,[{"role":"user","content":"What is the time?"}],0.2,0.5,50,false,true,10101
+mistral-xlarge,[{"role":"assistant","content":"The game has been cancelled"}],0.1,0.4,55,true,true,31313
+mistral-tiny,[{"role":"user","content":"Set an alarm for 7 AM"}],0.0,0.3,60,false,false,52525
